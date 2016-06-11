@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@id/ll_up"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg_color_theme"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@id/title_bar"
+            layout="@layout/navigation_bar" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@id/ll_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" >
+
+                <include
+                    android:id="@id/bar"
+                    layout="@layout/bottom_navigation_bar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/ll_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/ll_bottom"
+                android:background="@color/bg_color_view"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@id/lv_revise"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="@color/color_cccccc"
+                    android:dividerHeight="1.0dip" />
+
+                <LinearLayout
+                    android:id="@id/ll_recommend_empty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8.0dip"
+                        android:text="@string/show_revise_tips"
+                        android:textColor="@color/bm_color_light_black_666666"
+                        android:textSize="15.0sp" />
+
+                    <LinearLayout
+                        android:id="@id/ll_all_revise"
+                        android:layout_width="90.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_marginLeft="@dimen/view_sr_margin"
+                        android:layout_marginRight="@dimen/view_sr_margin"
+                        android:layout_marginTop="35.0dip"
+                        android:background="@drawable/selector_bg_confirm"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="大家都在改"
+                            android:textColor="#ffffffff"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@id/menu"
+                layout="@layout/popu_menu" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

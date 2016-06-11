@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/view_layout_width" android:layout_height="@dimen/view_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffd9d9d9" android:layout_width="280.0dip" android:layout_height="45.0dip" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/tv_revise" android:background="#ffffffff" android:layout_width="220.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:hint="你自己输入数字" android:maxLength="10" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/tv_cancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="取消" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="大家都在改 :" />
+            <ListView android:id="@id/lv_select_strategy" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff666666" android:id="@id/tv_hnit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="  此款游戏暂无牛逼人物出没，大神是否愿意做史上牛逼第一人？" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_keyboard" android:background="@color/bg_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="55.0dip" />
+            <include android:id="@id/input" layout="@layout/numerickeyboard_layout_new" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/ll_tmore" android:background="@color/bg_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="vertical" android:layout_width="280.0dip" android:layout_height="250.0dip">
+                <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:id="@id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:text="搜索到50条数据" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请返回游戏使其数值变化，然后重新搜索" android:layout_below="@id/tv_more" android:layout_centerHorizontal="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:layout_marginBottom="20.0dip" android:layout_centerHorizontal="true">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_goback" android:background="@drawable/selector_bg_confirm" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/view_sr_margin" android:layout_marginRight="@dimen/view_sr_margin" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="返回游戏" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/ll_tless" android:background="@color/bg_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="vertical" android:layout_width="280.0dip" android:layout_height="250.0dip">
+                <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:id="@id/tv_gorevise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:text="搜索到3条数据" android:layout_centerHorizontal="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:layout_marginBottom="20.0dip" android:layout_centerHorizontal="true">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_gorevise" android:background="@drawable/selector_bg_confirm" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/view_sr_margin" android:layout_marginRight="@dimen/view_sr_margin" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="修改" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/ll_tt" android:background="@color/bg_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="vertical" android:layout_width="280.0dip" android:layout_height="250.0dip">
+                <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:id="@id/tv_tt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:text="搜索到25条数据" android:layout_centerHorizontal="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:layout_marginBottom="20.0dip" android:layout_centerHorizontal="true">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_keepsearch" android:background="@drawable/selector_bg_confirm" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/view_sr_margin" android:layout_marginRight="@dimen/view_sr_margin" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="继续搜索" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_allresive" android:background="@drawable/selector_bg_confirm" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/view_sr_margin" android:layout_marginRight="@dimen/view_sr_margin" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部修改" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_seniorresive" android:background="@drawable/selector_bg_confirm" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/view_sr_margin" android:layout_marginRight="@dimen/view_sr_margin" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="高级修改" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_up" android:background="@color/bg_color_theme" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <include android:id="@id/title_bar" layout="@layout/navigation_bar" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_listview" android:background="@color/bg_color_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                    <TextView android:textColor="@color/txt_color_appname" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="9999人修改了生命值" />
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_revise_strategy" android:background="@drawable/selector_bg_confirm" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/view_sr_margin" android:layout_marginRight="@dimen/view_sr_margin" android:layout_alignParentRight="true">
+                            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_content_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我要修改" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView android:textColor="@color/txt_color_appname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="其他人修改：" android:layout_below="@id/ll_revise_strategy" />
+                <LinearLayout android:gravity="center" android:background="@color/bg_color_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ListView android:id="@id/lv_revise_strategys" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+            </LinearLayout>
+            <include android:id="@id/menu" layout="@layout/popu_menu" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

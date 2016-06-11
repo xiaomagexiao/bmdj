@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/id_searchresult_txt_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <Button android:textColor="@color/white" android:id="@id/id_searchresult_btn_left" android:background="@drawable/selector_bg_confirm" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="30.0dip" />
+        <Button android:textColor="@color/white" android:id="@id/id_searchresult_btn_middle" android:background="@drawable/selector_bg_confirm" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" />
+        <Button android:textColor="@color/white" android:id="@id/id_searchresult_btn_right" android:background="@drawable/selector_bg_confirm" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

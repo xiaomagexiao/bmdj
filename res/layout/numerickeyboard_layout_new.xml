@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/one" android:background="@drawable/selector_bg_one" android:layout_width="@dimen/in_wh" android:layout_height="@dimen/in_he" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/two" android:background="@drawable/selector_bg_two" android:layout_width="@dimen/in_wh" android:layout_height="@dimen/in_he" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/three" android:background="@drawable/selector_bg_three" android:layout_width="@dimen/in_wh" android:layout_height="@dimen/in_he" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/four" android:background="@drawable/selector_bg_four" android:layout_width="@dimen/in_wh" android:layout_height="@dimen/in_he" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/five" android:background="@drawable/selector_bg_five" android:layout_width="@dimen/in_wh" android:layout_height="@dimen/in_he" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/six" android:background="@drawable/selector_bg_six" android:layout_width="@dimen/in_wh" android:layout_height="@dimen/in_he" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/seven" android:background="@drawable/selector_bg_seven" android:layout_width="@dimen/in_wh" android:layout_height="@dimen/in_he" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/eight" android:background="@drawable/selector_bg_eight" android:layout_width="@dimen/in_wh" android:layout_height="@dimen/in_he" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/nine" android:background="@drawable/selector_bg_nine" android:layout_width="@dimen/in_wh" android:layout_height="@dimen/in_he" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/zero" android:background="@drawable/selector_bg_zero" android:layout_width="@dimen/in_wh" android:layout_height="@dimen/in_he" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/spot" android:background="@drawable/selector_bg_point" android:layout_width="@dimen/in_wh" android:layout_height="@dimen/in_he" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/add_subtract" android:background="@drawable/selector_bg_addd" android:layout_width="@dimen/in_wh" android:layout_height="@dimen/in_he" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/delete" android:background="@drawable/selector_bg_del" android:layout_width="@dimen/in_wh" android:layout_height="@dimen/in_he" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/confirm" android:background="@drawable/selector_bg_confir" android:layout_width="101.0dip" android:layout_height="@dimen/in_he" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

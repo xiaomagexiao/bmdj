@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_planbk" android:background="@drawable/selector_bg_strategyor" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/plan_rs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="1." android:layout_weight="5.0" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/plan_sz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="生命值" android:layout_weight="5.0" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/plan_try" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text=" 999人修改" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

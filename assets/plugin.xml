@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin-features
+    Bundle-Name="FloatWindownBundle"
+    Bundle-SymbolicName="com.zhangkongapp.joke.floatwindown"
+    Bundle-Version="1.1.1"
+    date="2016.5.31"
+    Bundle-Activator="com.joke.bamenshenqi.apkplug.BmBundleActivator"
+    Bundle-Activity="com.joke.bamenshenqi.component.activity.FwMainActivity"
+    >
+</plugin-features>

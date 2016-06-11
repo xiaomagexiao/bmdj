@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#34111111" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_up" android:background="@color/bg_color_theme" android:layout_width="@dimen/app_fragment_width" android:layout_height="@dimen/app_fragment_height" android:layout_centerInParent="true">
+        <include android:id="@id/title_bar" layout="@layout/navigation_bar" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="255.0dip">
+            <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="@dimen/fra_layout_height" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_listview" android:layout_width="fill_parent" android:layout_height="235.0dip">
+                <LinearLayout android:gravity="center" android:background="@color/bg_color_view" android:layout_width="fill_parent" android:layout_height="210.0dip">
+                    <ListView android:id="@id/lv_revise" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+                <include android:id="@id/bar" layout="@layout/bottom_navigation_bar" />
+            </LinearLayout>
+            <include android:id="@id/menu" layout="@layout/popu_menu" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

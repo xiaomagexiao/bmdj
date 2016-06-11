@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">FloatWindown</string>
+    <string name="continue_search_tips">游戏中%1$s变成了</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="keyboard_clear">清空</string>
+    <string name="keyboard_confirm">确定</string>
+    <string name="keyboard_loading">正在搜索游戏数据，请稍候...</string>
+    <string name="search_button_left">继续搜索</string>
+    <string name="search_button_middle">高级修改</string>
+    <string name="search_button_right">修改全部</string>
+    <string name="search_tips_4_30">搜索到%1$s条数据，请选择：</string>
+    <string name="search_tips_above_30">"搜索到%1$s条数据，
+请返回游戏使数值%2$s变化，然后继续搜索。"</string>
+    <string name="search_tips_below_4">搜索到%1$s条数据，直接修改：</string>
+    <string name="search_tips_null">搜索结果为空</string>
+    <string name="show_message_tips">后台暂无运行的游戏，请先打开游戏后台运行。</string>
+    <string name="show_revise_tips">"你还没有修改记录 
+去看看大家怎么修改的吧"</string>
+    <string name="show_self_tips">没找到？请打开游戏后台运行或点左上角图标刷新</string>
+    <string name="show_share">大神，恭喜修改成功！</string>
+    <string name="show_share_tips">请在下方输入您修改数值的名称进行共享。</string>
+    <string name="view_keyboard_tips">搜索结果为空</string>
+    <string name="view_search_recommend_empty">"此款游戏暂无人共享修改方案 
+请大神自行修改。"</string>
+    <string name="view_search_recommend_hint">请输入要搜索的数值</string>
+    <string name="view_search_recommend_tips">大家都在修改：</string>
+</resources>

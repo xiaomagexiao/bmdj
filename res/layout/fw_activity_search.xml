@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/id_search_title_bar" layout="@layout/new_navigation_bar" />
+    <RelativeLayout android:background="#cb000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/id_keyboard_edit_container" android:background="@color/bm_color_light_gray_D9D9D9" android:layout_width="fill_parent" android:layout_height="@dimen/edit_height" android:layout_alignParentTop="true">
+            <TextView android:textColor="@color/bm_color_light_black_666666" android:gravity="center" android:id="@id/id_keyboard_continue_search" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/continue_search_tips" />
+            <EditText android:id="@id/id_keyboard_edit" android:background="@color/white" android:padding="10.0dip" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/tv_view_size" android:textColor="@color/bm_color_light_black_666666" android:gravity="center" android:id="@id/id_recommend_cancel" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="取消" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/id_keyboard_loading" android:background="@color/bm_color_light_gray_A9A9A9" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/id_keyboard_edit_container">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/keyboard_loading" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/id_keyboard_tips_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/id_keyboard_loading" android:layout_alignWithParentIfMissing="true">
+            <com.joke.bamenshenqi.module.ui.view.SearchResultView android:id="@id/id_keyboard_searchresultview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <android.inputmethodservice.KeyboardView android:id="@id/id_keyboard_input_method" android:background="#ffe1e1e1" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

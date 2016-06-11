@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/bg_color_theme" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/id_item_process_selected_status" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/id_item_process_selected_icon" android:background="@drawable/icon" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    <TextView android:gravity="center" android:id="@id/id_item_process_selected_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+</LinearLayout>
