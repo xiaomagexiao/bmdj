@@ -73,10 +73,6 @@ public class NetHelper {
 		super();
 	}
 
-	static Object access$000(String x0, String x1) {
-		return NetHelper.processResponse(x0, x1);
-	}
-
 	public static void cancel(AsyncTask tag) {
 		if (tag != null && ((tag instanceof NetAsyncTask))) {
 			tag.cancel(true);

@@ -54,19 +54,6 @@ public class BaseActivity extends Activity {
         };
     }
 
-    static NativeCtrl access$000(BaseActivity x0) {
-        return x0.nativeCtrl;
-    }
-
-    static NativeCtrl access$002(BaseActivity x0, NativeCtrl x1) {
-        x0.nativeCtrl = x1;
-        return x1;
-    }
-
-    static void access$100(BaseActivity x0, int x1) {
-        x0.noRootDialog(x1);
-    }
-
     public void closeSelf() {
         if(this.bmIconViewService != null) {
             this.bmIconViewService.stopSelf();

@@ -85,11 +85,7 @@ public class FilterPopupWindowTools implements AdapterView.OnItemClickListener {
 		this.height = height;
 		this.allSelectors = arg4;
 	}
-
-	static Context access$100(FilterPopupWindowTools x0) {
-		return x0.context;
-	}
-
+	
 	public void dismiss() {
 		this.popupWindow.dismiss();
 	}

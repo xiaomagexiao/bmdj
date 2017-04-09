@@ -48,10 +48,6 @@ public class SearchResultView extends LinearLayout {
         this.initView(context);
     }
 
-    static OnButtonClickedListener access$000(SearchResultView x0) {
-        return x0.listener;
-    }
-
     public void clear() {
         this.setResultSize(0);
     }

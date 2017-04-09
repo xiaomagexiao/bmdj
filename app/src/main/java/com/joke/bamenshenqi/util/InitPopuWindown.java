@@ -28,22 +28,6 @@ public class InitPopuWindown {
 		super();
 	}
 
-	static ProcessInfo access$000(InitPopuWindown x0) {
-		return x0.mdatapi;
-	}
-
-	static Context access$100(InitPopuWindown x0) {
-		return x0.mcontext;
-	}
-
-	static BaseActivity access$200(InitPopuWindown x0) {
-		return x0.mactivity;
-	}
-
-	static NativeCtrl access$300(InitPopuWindown x0) {
-		return x0.nNativeCtrl;
-	}
-
 	public void initPopu(final BaseActivity activity, Context context, View v, ProcessInfo datapi, NativeCtrl mNativeCtrl) {
 		this.mcontext = context;
 		this.mdatapi = datapi;

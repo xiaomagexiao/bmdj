@@ -83,14 +83,6 @@ public class ProcessSelectedFragment extends DialogFragment {
         this.activity = this.getActivity();
     }
 
-    static NativeCtrl access$000(ProcessSelectedFragment x0) {
-        return x0.nativeCtrl;
-    }
-
-    static ProcessAdapter access$100(ProcessSelectedFragment x0) {
-        return x0.adapter;
-    }
-
     public Drawable getAppIcon(Context context, String packageName) {
         PackageManager v3 = context.getPackageManager();
         try {

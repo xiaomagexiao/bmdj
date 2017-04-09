@@ -185,62 +185,6 @@ public class FwReviseRecordActivity extends BaseActivity implements View.OnClick
 		this.recordList = new ArrayList();
 	}
 
-	static void access$000(FwReviseRecordActivity x0, int x1) {
-		x0.deleteDialog(x1);
-	}
-
-	static int access$200(FwReviseRecordActivity x0) {
-		return x0.retLock;
-	}
-
-	static int access$202(FwReviseRecordActivity x0, int x1) {
-		x0.retLock = x1;
-		return x1;
-	}
-
-	static NativeCtrl access$300(FwReviseRecordActivity x0) {
-		return x0.mNativeCtrl;
-	}
-
-	static NewsAdapter access$400(FwReviseRecordActivity x0) {
-		return x0.adapter;
-	}
-
-	static int access$500(FwReviseRecordActivity x0) {
-		return x0.retUnlock;
-	}
-
-	static int access$502(FwReviseRecordActivity x0, int x1) {
-		x0.retUnlock = x1;
-		return x1;
-	}
-
-	static List access$600(FwReviseRecordActivity x0) {
-		return x0.recordList;
-	}
-
-	static List access$602(FwReviseRecordActivity x0, List x1) {
-		x0.recordList = x1;
-		return x1;
-	}
-
-	static List access$700(FwReviseRecordActivity x0) {
-		return x0.itemList;
-	}
-
-	static List access$702(FwReviseRecordActivity x0, List x1) {
-		x0.itemList = x1;
-		return x1;
-	}
-
-	static TextView access$800(FwReviseRecordActivity x0) {
-		return x0.choice;
-	}
-
-	static ImageView access$900(FwReviseRecordActivity x0) {
-		return x0.imageChoice;
-	}
-
 	private void deleteDialog(final int position) {
 		final AlertDialog.Builder v0 = new AlertDialog.Builder(((Context) this));
 		v0.setMessage("确认删除吗？");

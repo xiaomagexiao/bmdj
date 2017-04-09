@@ -112,14 +112,6 @@ public class KeyboardUtils {
         this.mKeyboardView.setKeyboard(this.mKeyboard);
     }
 
-    static EditText access$000(KeyboardUtils x0) {
-        return x0.mEditText;
-    }
-
-    static OnSearchClickedListener access$100(KeyboardUtils x0) {
-        return x0.listener;
-    }
-
     private void enableSoftInputMode(EditText editText) {
         if(Build.VERSION.SDK_INT <= 10) {
             editText.setInputType(0);

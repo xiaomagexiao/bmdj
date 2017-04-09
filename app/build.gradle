@@ -17,12 +17,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
 }
 
 dependencies {
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'org.osgi:core:4.3.0'
+    compile 'de.greenrobot:greendao:2.1.0'
+    compile 'com.android.support:support-annotations:23.1.1'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
 }
-
-
 
 
 

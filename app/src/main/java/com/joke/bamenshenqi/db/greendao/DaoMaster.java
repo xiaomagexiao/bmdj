@@ -5,7 +5,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-import de.greenrobot.dao.AbstractDao;
+
 import de.greenrobot.dao.AbstractDaoMaster;
 import de.greenrobot.dao.identityscope.IdentityScopeType;
 
@@ -30,9 +30,9 @@ public class DaoMaster extends AbstractDaoMaster {
 
     public DaoMaster(SQLiteDatabase db) {
         super(db, 1);
-        this.registerDaoClass((Class<? extends AbstractDao<?, ?>>) NoteDao.class);
-        this.registerDaoClass((Class<? extends AbstractDao<?, ?>>) StudentDao.class);
-        this.registerDaoClass((Class<? extends AbstractDao<?, ?>>) ReviseDao.class);
+//        this.registerDaoClass((Class<? extends AbstractDao<?, ?>>) NoteDao.class);
+//        this.registerDaoClass((Class<? extends AbstractDao<?, ?>>) StudentDao.class);
+//        this.registerDaoClass((Class<? extends AbstractDao<?, ?>>) ReviseDao.class);
     }
 
 	public static void createAllTables(SQLiteDatabase db, boolean ifNotExists) {
